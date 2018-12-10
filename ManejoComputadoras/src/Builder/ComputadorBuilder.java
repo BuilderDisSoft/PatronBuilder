@@ -15,32 +15,25 @@ public abstract class ComputadorBuilder {
     }
     
     
+ 
+
     
+
+    public abstract void setRam();
+     
+    public abstract void setOs();
+    public abstract void setAlmacenamiento();
     
+    public abstract void setPlaca();
 
-    public abstract int getRam();
+    public abstract void setMarca();
 
-    public abstract void setRam(int ram);
 
-    public abstract SistemaOperativo getOs();
-
-    public abstract void setOs(SistemaOperativo os);
-    public abstract int getAlmacenamiento();
-    public abstract void setAlmacenamiento(int almacenamiento);
-    public abstract Mainboard getPlaca();
-    public abstract void setPlaca(Mainboard placa);
-
-    public abstract String getMarca();
-
-    public abstract void setMarca(String marca);
-
-    public abstract String getModelo();
-
-    public abstract void setModelo(String modelo);
+    public abstract void setModelo();
 
     public abstract boolean isCoolerExterno();
 
-    public abstract void setCoolerExterno(boolean coolerExterno);
+    public abstract void setCoolerExterno();
     
     
 
