@@ -4,44 +4,62 @@ import emsamablajecomputadoras.creacional.Mainboard;
 import emsamablajecomputadoras.creacional.SistemaOperativo;
 
 public class BuilderAsusR extends ComputadorBuilder{
-	@Override
-	public void setMarca() {
-		computador.setMarca("Asus");
+		@Override
+	public void setRam() {
+		c.setRam(32);
+		
 	}
 
 	@Override
-	public void setModelo() {
-		computador.setModelo("ROG");
-	}
+	public void setOs() {
+		c.setOs(new SistemaOperativo("Windows 10", 64, "PRO"));
+		
 
-	@Override
-	public void setRAM() {
-		computador.setRam(32);	
 		
 	}
 
 	@Override
 	public void setAlmacenamiento() {
-		computador.setAlmacenamiento(1000);
+		c.setAlmacenamiento(1000);
 		
 	}
 
 	@Override
-	public void SistemaOperativo() {
-		computador.setOs(new SistemaOperativo("Windows 10", 64, "PRO"));
+	public void setPlaca() {
+		c.setPlaca(new Mainboard("Strix", "x99"));
 		
 	}
 
 	@Override
-	public void setMainboard() {
-		computador.setPlaca(new Mainboard("Strix", "x99"));
+	public void setMarca() {
+		c.setMarca("Asus");
+
+		
+	}
+
+	@Override
+	public void setModelo() {
+		c.setModelo("ROG");
+		
+	}
+
+	@Override
+	public boolean isCoolerExterno() {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public void setCoolerExterno() {
+		// TODO Auto-generated method stub
 		
 	}
 
 	@Override
 	public void setComputador() {
-		computador = new Computador();
+		c = new Computador();
 		
 	}
+
 	
 }
